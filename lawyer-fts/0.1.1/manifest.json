@@ -1,0 +1,20 @@
+{
+  "id": "lawyer-fts",
+  "name": "法天使合同库",
+  "version": "0.1.1",
+  "tier": "js",
+  "sdkVersion": "^0.4",
+  "minAppVersion": "1.0.5",
+  "permissions": [
+    "storage",
+    "tools",
+    "ui:settings-section",
+    "ui:panel-tab",
+    "events",
+    "network:mcp.fatianshi.cn",
+    "network:ckauth.fatianshi.cn",
+    "network:127.0.0.1",
+    "exec:sh"
+  ],
+  "description": "连接法天使账号后，AI 可检索法天使合同库的专业合同模板并按官方「模板生成合同」流程生成合同全文（创建副本等操作前 AI 会先征求律师确认）；右侧「法天使」面板支持模板快搜与最近搜索；设置页提供授权连接与断开。"
+}

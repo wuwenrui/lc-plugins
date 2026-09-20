@@ -123,8 +123,8 @@
     {
       "id": "lawyer-fts",
       "name": "法天使合同库",
-      "description": "用你的法天使账号授权，AI 可检索法天使合同库的专业合同模板（搜索模板、查看模板信息与正文）；右侧「法天使」面板支持模板快搜与最近搜索；设置页提供授权连接与断开。",
-      "version": "0.1.0",
+      "description": "用你的法天使账号授权，AI 可检索法天使合同库的专业合同模板并按官方流程生成合同全文（创建副本等操作前 AI 会先征求律师确认）；右侧「法天使」面板支持模板快搜与最近搜索。",
+      "version": "0.1.1",
       "tier": "js",
       "minAppVersion": "1.0.5",
       "sdkVersion": "^0.4",
@@ -140,10 +140,10 @@
         "exec:sh"
       ],
       "files": {
-        "manifest.json": "4ecab3fd1419c879e4680c453f03a8a1b3aede2c905e83ce4a177e1070f0ee5e",
-        "main.js": "04b074e9b737df8a1e4a6ec3bd7e62c83c9843efd83ca018e066f81f34a3f738"
+        "manifest.json": "a2cf9aa6128ac0c8f63f9d0caac99cc69c8a42dfff8ee038742fc11ddf99654d",
+        "main.js": "a98a76a2b3a2f05ccece534de6483f1879d0c72b34eccff7b84cdbde44283b6f"
       },
-      "notes": "v0.1.0 首发：OAuth（官方 ckauth IdentityServer，DCR + PKCE，宿主网关回调）+ 法天使官方 MCP 只读工具（白名单扩展 download_/fetch_ 等只读动词）；46 项单测 + 模拟链路 14 次交互全通过，真实端点探测到授权页 302。"
+      "notes": "v0.1.1：真实账号实测后开放法天使官方「模板生成合同」工作流（search_templates 实测确认、create_copy/submit_* 放行并要求 AI 先征得律师确认，删除/支付仍拒绝）+ 面板支持官方 YAML 返回的模板卡片解析（isOfficial→官方标记）。49 项单测全绿。"
     }
   ]
 }
