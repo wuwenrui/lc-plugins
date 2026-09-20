@@ -124,7 +124,7 @@
       "id": "lawyer-fts",
       "name": "法天使合同库",
       "description": "用你的法天使账号授权，AI 可检索法天使合同库的专业合同模板并按官方流程生成合同全文（创建副本等操作前 AI 会先征求律师确认）；右侧「法天使」面板支持模板快搜与最近搜索。",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "tier": "js",
       "minAppVersion": "1.0.5",
       "sdkVersion": "^0.4",
@@ -140,10 +140,10 @@
         "exec:sh"
       ],
       "files": {
-        "manifest.json": "a2cf9aa6128ac0c8f63f9d0caac99cc69c8a42dfff8ee038742fc11ddf99654d",
-        "main.js": "a98a76a2b3a2f05ccece534de6483f1879d0c72b34eccff7b84cdbde44283b6f"
+        "manifest.json": "c1d5b66f715bfc34c6f714335732a39438f3041fec928a5d4687e7ea6f0a651e",
+        "main.js": "e1904eb184560cd8e86c90b7d274b4ef562036cebe7f10b1a9b3b4a49283dc0c"
       },
-      "notes": "v0.1.1：真实账号实测后开放法天使官方「模板生成合同」工作流（search_templates 实测确认、create_copy/submit_* 放行并要求 AI 先征得律师确认，删除/支付仍拒绝）+ 面板支持官方 YAML 返回的模板卡片解析（isOfficial→官方标记）。49 项单测全绿。"
+      "notes": "v0.1.2：真实账号全量工具审计（10/10）——补齐 generate_copy_file（生成合同文件下载）、render_copy（正文预览）、apply_document_revisions + prepare_document_upload（下载后修订）4 个被白名单误挡的官方工作流工具，均归「需确认」组；法天使官方流程可完整走通：搜模板→建副本→选条款→填变量→生成 docx/pdf 下载→修订。"
     }
   ]
 }
