@@ -48,7 +48,7 @@
       "id": "lawyer-mail",
       "name": "律师邮件",
       "description": "AI 可真实收发邮件（IMAP/SMTP）：支持绑定多个邮箱、面板顶部一键切换、对话中指定邮箱；右侧面板浏览、多选交给 AI、搜索、读信、附件下载；发信必须律师确认。",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "tier": "js",
       "minAppVersion": "1.0.5",
       "sdkVersion": "^0.4",
@@ -61,8 +61,8 @@
         "exec:node"
       ],
       "files": {
-        "manifest.json": "71da6c8c11ecfd79bf8eea509d1aff818fa654688e170e131ddc63e0a40bccf5",
-        "main.js": "44d63fdd34c9b77a30e30c5b4014788d57529a27a415efbdc5bbbf306ad0a7a3",
+        "manifest.json": "c5d7671be3996580edbfa17c401d571950a926cbdb011fa136079d7127b3ed08",
+        "main.js": "c277bc3d55f9f99b0d3a5fd1e255ad8d343c7ecf1b0e4c87c2164c33f82f186c",
         "attachments.js": "3f00672ace313cd8b8bc1f0b39fa5fcefa7d214c6383797a55fd855324c8134e",
         "errors.js": "922efc20d94ccc2cc58ecc10b4099ddf1788a6c7e4af38c34ad747636afc4549",
         "imap.js": "30b149a4a16a820dfdd52ee1358dfe1e6bd81f2363ffd606a8d0bd3964580fbc",
@@ -72,7 +72,7 @@
         "smtp.js": "38e2a3d6e016437e159a2ae52bc6938a6ec1a100e1aa059e6180d8223135697c",
         "validate.js": "b050ec7b24a8cce3acf0ada1fca37bd052c7c01eabddbf6cd3838b06a6816c4c"
       },
-      "notes": "v0.3.0：多邮箱——绑定任意数量邮箱（设置页列表管理：设为当前/测试/解绑，旧单账号自动迁移），右侧面板顶部邮箱胶囊一键切换；全部对话工具支持 account 参数指定邮箱（默认当前）；mail_status 列出全部邮箱与各自连接状态。33 项单测全绿（新增 accounts 层 8 项：迁移/切换/脏数据自愈）。"
+      "notes": "v0.4.0：绑定傻瓜化——表单默认只露「服务商/邮箱地址/授权码/绑定」四要素，服务器参数收进「高级设置」折叠区（自定义自动展开）；授权码提示按服务商显示最短获取路径；设置卡全面换宿主语义设计令牌（状态点+人性化时间，不再暴露服务器端点）。42 项单测全绿（新增 settings-logic 9 项）。"
     },
     {
       "id": "lawyer-billing",
