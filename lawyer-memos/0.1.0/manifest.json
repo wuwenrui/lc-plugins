@@ -1,0 +1,10 @@
+{
+  "id": "lawyer-memos",
+  "name": "律师备忘录",
+  "version": "0.1.0",
+  "tier": "js",
+  "sdkVersion": "^0.4",
+  "minAppVersion": "1.0.5",
+  "permissions": ["storage", "tools", "ui:settings-section"],
+  "description": "对话内可用的备忘录：AI 可列出、创建、完成备忘；设置页提供管理界面。"
+}

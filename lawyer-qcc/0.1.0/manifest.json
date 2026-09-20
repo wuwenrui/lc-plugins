@@ -1,0 +1,18 @@
+{
+  "id": "lawyer-qcc",
+  "name": "企查查",
+  "version": "0.1.0",
+  "tier": "js",
+  "sdkVersion": "^0.4",
+  "minAppVersion": "1.0.5",
+  "permissions": [
+    "storage",
+    "tools",
+    "ui:settings-section",
+    "events",
+    "network:agent.qcc.com",
+    "network:127.0.0.1",
+    "exec:sh"
+  ],
+  "description": "连接企查查账号后，AI 可调用企查查官方 MCP 的只读工具查询企业工商、风险、知识产权等信息；设置页提供授权连接与断开。"
+}
