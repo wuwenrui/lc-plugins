@@ -1,0 +1,10 @@
+{
+  "id": "lawyer-memos",
+  "name": "律师备忘录",
+  "version": "0.3.0",
+  "tier": "js",
+  "sdkVersion": "^0.4",
+  "minAppVersion": "1.0.5",
+  "permissions": ["storage", "tools", "ui:settings-section", "ui:panel-tab", "exec:osascript"],
+  "description": "对话内可用的备忘录：AI 可列出、创建、完成、修改、删除备忘，可查看提醒事项列表；聊天右侧「备忘」面板随手记录（到期 / 优先级）；备忘双向同步 macOS「提醒事项」，系统不可用时静默回退纯本机。"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "lawyer-billing",
+  "name": "模型站计费",
+  "version": "0.2.0",
+  "tier": "js",
+  "sdkVersion": "^0.4",
+  "minAppVersion": "1.0.5",
+  "permissions": ["storage", "tools", "ui:settings-section", "ui:status-bar", "ui:panel-tab", "network:model.codingrui.work"],
+  "description": "模型站余额与用量：右侧「用量」面板查看余额与近 7 天消费柱状图，设置页绑定 API 令牌，状态栏常驻余额徽标，对话内可查询剩余额度。"
+}

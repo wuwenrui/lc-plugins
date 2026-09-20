@@ -1,0 +1,10 @@
+{
+  "id": "lawyer-calendar",
+  "name": "律师日历",
+  "version": "0.2.0",
+  "tier": "js",
+  "sdkVersion": "^0.4",
+  "minAppVersion": "1.0.5",
+  "permissions": ["storage", "tools", "ui:settings-section", "ui:panel-tab", "exec:osascript", "exec:open"],
+  "description": "基于 macOS 日历.app 的日程助手：AI 可查看未来日程（含进行中/跨窗、地点、提醒时刻、uid），起草支持地点/全天/多提醒；律师确认后写入真实日历；支持按 uid 修改与删除（删除必须律师确认）；右侧「日历」面板近 7 天时间线一览。"
+}

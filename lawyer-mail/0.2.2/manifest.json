@@ -1,0 +1,17 @@
+{
+  "id": "lawyer-mail",
+  "name": "律师邮件",
+  "version": "0.2.2",
+  "tier": "js",
+  "sdkVersion": "^0.4",
+  "minAppVersion": "1.0.5",
+  "permissions": [
+    "storage",
+    "tools",
+    "ui:settings-section",
+    "ui:panel-tab",
+    "composer:draft",
+    "exec:node"
+  ],
+  "description": "AI 可真实收发邮件（IMAP/SMTP）：右侧面板浏览与多选邮件交给 AI 处理、搜索、读信、附件下载到「下载」文件夹（中文/GBK 编码文件名自动还原）、发信（必须律师确认）；设置页绑定邮箱。"
+}
