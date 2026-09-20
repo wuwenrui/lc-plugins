@@ -26,7 +26,7 @@
       "id": "lawyer-calendar",
       "name": "律师日历",
       "description": "基于 macOS 日历.app 的日程助手：查（含进行中/跨窗）、起草确认写入、修改、删除（双重确认），支持地点/全天/多提醒；右侧「日历」面板近 7 天时间线。",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "tier": "js",
       "minAppVersion": "1.0.5",
       "sdkVersion": "^0.4",
@@ -35,14 +35,15 @@
         "tools",
         "ui:settings-section",
         "ui:panel-tab",
+        "composer:draft",
         "exec:osascript",
         "exec:open"
       ],
       "files": {
-        "manifest.json": "88290bafa44438565745d075e75a58e9059d711a7bd95534feeb978f840e424b",
-        "main.js": "d5ef69dfbf4b0624b23b282feb8dc375b6099cd48012cb2217e70c3fa650875d"
+        "manifest.json": "30980bc0a9b0a0aebcea0332685be9945bcbf55fe15a8eb0bc33d420660c45cc",
+        "main.js": "a4c9b5adab715329832d93439cfe448c29b89be77b7fcfa89abe67669aed67c8"
       },
-      "notes": "v0.2.0：calendar_update/calendar_delete（confirm 门禁）+ 地点/全天/多提醒/重复标记 + uid 登记表 + 右侧面板；63 项单测与真机 15 步全链路验证。"
+      "notes": "v0.3.0：右侧面板改月历视图——翻月网格（今天/选中日高亮、日程日历色点）、点日期看当日日程与详情（时间/地点/备注，日历.app 真实数据）；新增「创建提醒」（写入系统提醒事项 App《律师提醒》列表）与「让 AI 安排」（日期写入聊天草稿，AI 用备忘录工具建提醒）。74 项单测全绿（新增 month-logic 13 项）；提醒 JXA 真机建-读-删闭环验证。"
     },
     {
       "id": "lawyer-mail",
