@@ -47,8 +47,8 @@
     {
       "id": "lawyer-mail",
       "name": "律师邮件",
-      "description": "AI 可真实收发邮件（IMAP/SMTP）：右侧面板浏览与多选邮件交给 AI 处理、搜索、读信、附件下载到「下载」文件夹（中文/GBK 编码文件名自动还原）、发信（必须律师确认）；设置页绑定邮箱。",
-      "version": "0.2.2",
+      "description": "AI 可真实收发邮件（IMAP/SMTP）：支持绑定多个邮箱、面板顶部一键切换、对话中指定邮箱；右侧面板浏览、多选交给 AI、搜索、读信、附件下载；发信必须律师确认。",
+      "version": "0.3.0",
       "tier": "js",
       "minAppVersion": "1.0.5",
       "sdkVersion": "^0.4",
@@ -61,8 +61,8 @@
         "exec:node"
       ],
       "files": {
-        "manifest.json": "e2afed4a963537d7b953dea0592733b9ab0a7cb85809acb27f0e1759ebc93fa0",
-        "main.js": "c62e88ed0f241e8bd89ed74860d0c35cc5b0146538a5f903acf2196057cc70c3",
+        "manifest.json": "71da6c8c11ecfd79bf8eea509d1aff818fa654688e170e131ddc63e0a40bccf5",
+        "main.js": "44d63fdd34c9b77a30e30c5b4014788d57529a27a415efbdc5bbbf306ad0a7a3",
         "attachments.js": "3f00672ace313cd8b8bc1f0b39fa5fcefa7d214c6383797a55fd855324c8134e",
         "errors.js": "922efc20d94ccc2cc58ecc10b4099ddf1788a6c7e4af38c34ad747636afc4549",
         "imap.js": "30b149a4a16a820dfdd52ee1358dfe1e6bd81f2363ffd606a8d0bd3964580fbc",
@@ -72,7 +72,7 @@
         "smtp.js": "38e2a3d6e016437e159a2ae52bc6938a6ec1a100e1aa059e6180d8223135697c",
         "validate.js": "b050ec7b24a8cce3acf0ada1fca37bd052c7c01eabddbf6cd3838b06a6816c4c"
       },
-      "notes": "首个双进程形态插件：协议层跑在 dist-server/server.mjs（自 LawyerDesk lawyer-harness 移植的零依赖 IMAP/SMTP 实现）。v0.2.0：右侧面板（ui:panel-tab）+ mail_list_recent / mail_save_attachments 工具；附件下载字节精确（base64/QP/8bit）且文件名编码（RFC2047/RFC2231/裸 GBK）自动还原，同名不覆盖。v0.2.1：面板精致化重做——宿主语义设计令牌（明暗主题自适应）、全中文界面（邮件夹中文名/中文日期/未读标记）、发件人彩色头像、文件夹胶囊与圆角搜索。"
+      "notes": "v0.3.0：多邮箱——绑定任意数量邮箱（设置页列表管理：设为当前/测试/解绑，旧单账号自动迁移），右侧面板顶部邮箱胶囊一键切换；全部对话工具支持 account 参数指定邮箱（默认当前）；mail_status 列出全部邮箱与各自连接状态。33 项单测全绿（新增 accounts 层 8 项：迁移/切换/脏数据自愈）。"
     },
     {
       "id": "lawyer-billing",
