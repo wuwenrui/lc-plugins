@@ -104,7 +104,7 @@
       "id": "lawyer-qcc",
       "name": "企查查",
       "description": "用你的企查查账号授权（查询走账号会员额度，每日按会员等级发放），AI 可查询企业工商、风险、知识产权等信息；右侧「企查查」面板支持快查与最近查询。",
-      "version": "0.2.2",
+      "version": "0.2.3",
       "tier": "js",
       "minAppVersion": "1.0.6",
       "sdkVersion": "^0.4.3",
@@ -114,11 +114,12 @@
         "ui:settings-section",
         "ui:panel-tab",
         "events",
-        "network:agent.qcc.com"
+        "network:agent.qcc.com",
+        "network:www.qcc.com"
       ],
       "files": {
-        "manifest.json": "e85b29066cd1b5389353ee89c53049d73cafcfaa33e1ef7ebc63d644feab865a",
-        "main.js": "1693b6f3d80dc4af5bf291f1678d00a83e4a57a8f44c999d30530cd2a845fc4f"
+        "manifest.json": "8f75c5950c9b860483e0b3f47ee05ff00d9916d6295d1ec4e926624bf2e75df3",
+        "main.js": "dc1346c9d410b3879554b1b2faca4b15a13bc3e4c55971b3f8511b845b883867"
       },
       "notes": "v0.2.2：实机授权与查询链路已验证；识别企查查「无匹配项」答复并给出指引；只读工具按官方目录标注放行（8类数据源，写操作一律拒绝）；面板新增已脱敏返回详情，同参重试保护与计费保护保留。需要客户端1.0.6、SDK0.4.3。"
     },

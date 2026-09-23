@@ -1,0 +1,18 @@
+{
+  "id": "lawyer-qcc",
+  "name": "企查查",
+  "version": "0.2.3",
+  "tier": "js",
+  "sdkVersion": "^0.4.3",
+  "minAppVersion": "1.0.6",
+  "permissions": [
+    "storage",
+    "tools",
+    "ui:settings-section",
+    "ui:panel-tab",
+    "events",
+    "network:agent.qcc.com",
+    "network:www.qcc.com"
+  ],
+  "description": "企查查网页入口与官方 MCP 查询：企业快查直接展示已核实工商记录，可主动搜索相近企业；网页由用户自行登录，1.0.6 在系统浏览器打开，1.0.7 起在应用内宽屏打开。"
+}
