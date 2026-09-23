@@ -1,0 +1,10 @@
+{
+  "id": "lawyer-calendar",
+  "name": "律师日历",
+  "version": "0.3.2",
+  "tier": "js",
+  "sdkVersion": "^0.4",
+  "minAppVersion": "1.0.6",
+  "permissions": ["storage", "tools", "ui:settings-section", "ui:panel-tab", "composer:draft", "exec:osascript", "exec:open"],
+  "description": "基于 macOS EventKit 与日历.app 的日程助手：AI 和月历可查看重复日程的真实发生实例、单次例外及跨窗日程；律师确认后才写入真实日历；非重复日程支持按安全 uid 修改与删除，删除必须再次确认。"
+}

@@ -4,8 +4,8 @@
     {
       "id": "lawyer-memos",
       "name": "律师备忘录",
-      "description": "对话内可用的备忘录，严格打通 macOS 提醒事项：支持到期时间/优先级/备注/多列表，可创建、修改、完成、删除（双向同步）；右侧「备忘」面板一览与快捷录入。",
-      "version": "0.3.0",
+      "description": "右侧面板查看 Apple Notes，按文件夹浏览、新建和修改文本备忘录；附件或复杂排版交回系统编辑。另保留提醒事项面板、六个对话工具与原有双向同步。",
+      "version": "0.4.1",
       "tier": "js",
       "minAppVersion": "1.0.5",
       "sdkVersion": "^0.4",
@@ -17,18 +17,18 @@
         "exec:osascript"
       ],
       "files": {
-        "manifest.json": "6174693f459e01b8526fd0b3e881c8fa0ccf273d32c20af9ab722ff7d497d281",
-        "main.js": "1d57dcf3dce55e6dae3fccae50d99e489c6e72989efd95859697acf0ffa3eed9"
+        "manifest.json": "bc612c9999bfac551ad8ac2ba2570d1199d6d9ef0f211dccfabdb13bdbcaa275",
+        "main.js": "3d0b2bf359ad4a30c08c2442cb6a14a5dbfd0eea6e5774d0295be7d9965c12b2"
       },
-      "notes": "v0.3.0：提醒事项深度打通（dueDate/优先级/备注/列表选择/update/delete+tombstone 防重建）+ 右侧面板；67 项单测与真机 osascript 全链路终验。"
+      "notes": "v0.4.1：内容与 0.4.0 一致，随插件站首发整体上移版本号（本机已装同内容版本，用于验证更新通道）。"
     },
     {
       "id": "lawyer-calendar",
       "name": "律师日历",
-      "description": "基于 macOS 日历.app 的日程助手：查（含进行中/跨窗）、起草确认写入、修改、删除（双重确认），支持地点/全天/多提醒；右侧「日历」面板近 7 天时间线。",
-      "version": "0.3.0",
+      "description": "基于 macOS 日历的月历：翻月、按日期查看日程与详情，直接创建系统提醒，或把日期交给 AI 安排；保留确认写入、修改和删除日程。",
+      "version": "0.3.2",
       "tier": "js",
-      "minAppVersion": "1.0.5",
+      "minAppVersion": "1.0.6",
       "sdkVersion": "^0.4",
       "permissions": [
         "storage",
@@ -40,19 +40,19 @@
         "exec:open"
       ],
       "files": {
-        "manifest.json": "30980bc0a9b0a0aebcea0332685be9945bcbf55fe15a8eb0bc33d420660c45cc",
-        "main.js": "a4c9b5adab715329832d93439cfe448c29b89be77b7fcfa89abe67669aed67c8"
+        "manifest.json": "dbb77b3e546234f48c6734e3f7e3a2fd8be0bbcf33c483bb0da9b95d3ffe56a3",
+        "main.js": "7efdde17e7b66f0a3cdcc6dacd44dd7813ff59419d9b63a3c3257fe2edf4d1d7"
       },
-      "notes": "v0.3.0：右侧面板改月历视图——翻月网格（今天/选中日高亮、日程日历色点）、点日期看当日日程与详情（时间/地点/备注，日历.app 真实数据）；新增「创建提醒」（写入系统提醒事项 App《律师提醒》列表）与「让 AI 安排」（日期写入聊天草稿，AI 用备忘录工具建提醒）。74 项单测全绿（新增 month-logic 13 项）；提醒 JXA 真机建-读-删闭环验证。"
+      "notes": "v0.3.2：内容与 0.3.1 一致，随插件站首发整体上移版本号（本机已装同内容版本，用于验证更新通道）。"
     },
     {
       "id": "lawyer-mail",
       "name": "律师邮件",
       "description": "AI 可真实收发邮件（IMAP/SMTP）：支持绑定多个邮箱、面板顶部一键切换、对话中指定邮箱；右侧面板浏览、多选交给 AI、搜索、读信、附件下载；发信必须律师确认。",
-      "version": "0.4.0",
+      "version": "0.4.2",
       "tier": "js",
-      "minAppVersion": "1.0.5",
-      "sdkVersion": "^0.4",
+      "minAppVersion": "1.0.6",
+      "sdkVersion": "^0.4.3",
       "permissions": [
         "storage",
         "tools",
@@ -62,64 +62,65 @@
         "exec:node"
       ],
       "files": {
-        "manifest.json": "c5d7671be3996580edbfa17c401d571950a926cbdb011fa136079d7127b3ed08",
-        "main.js": "c277bc3d55f9f99b0d3a5fd1e255ad8d343c7ecf1b0e4c87c2164c33f82f186c",
+        "manifest.json": "6d4e32cce6a434ef4ab2a9bf6c345f6a4f7f32b58da38f7fd16d452391b596f0",
+        "main.js": "b914c8efa8b63a25b7e241f105a7f17b2d8f5c0f0364311f0f8f0f09288d1972",
+        "attachment-save.js": "7837023a4849598655c1bbbedcf76d87b973beb6f61fae677deed811ab3d63a8",
         "attachments.js": "3f00672ace313cd8b8bc1f0b39fa5fcefa7d214c6383797a55fd855324c8134e",
         "errors.js": "922efc20d94ccc2cc58ecc10b4099ddf1788a6c7e4af38c34ad747636afc4549",
         "imap.js": "30b149a4a16a820dfdd52ee1358dfe1e6bd81f2363ffd606a8d0bd3964580fbc",
         "mime-word.js": "91ecb381bc9efd1e6b8e919dc53cc1cc47cf55411a990c453fd8266a7ffee1e6",
         "mime.js": "d2033256f5079261cfe3cfcc134a4f2caea30f01d57cdc43685a094b835b8cbf",
-        "server.mjs": "6bb9e990a4221ee4596ec3981b37bc61300a71860350241b8f4f81ab10b34856",
+        "private-input.js": "4d7986a5b94650f26f17c53ef66b93c4ae2b0bd92c0ed76ab504d485ee6f1f6b",
+        "server.mjs": "f61d5df35e650455f8520e474b2399ac45704d82ed728b35a64043c6fd025bb7",
         "smtp.js": "38e2a3d6e016437e159a2ae52bc6938a6ec1a100e1aa059e6180d8223135697c",
         "validate.js": "b050ec7b24a8cce3acf0ada1fca37bd052c7c01eabddbf6cd3838b06a6816c4c"
       },
-      "notes": "v0.4.0：绑定傻瓜化——表单默认只露「服务商/邮箱地址/授权码/绑定」四要素，服务器参数收进「高级设置」折叠区（自定义自动展开）；授权码提示按服务商显示最短获取路径；设置卡全面换宿主语义设计令牌（状态点+人性化时间，不再暴露服务器端点）。42 项单测全绿（新增 settings-logic 9 项）。"
+      "notes": "v0.4.2：内容与 0.4.1 一致，随插件站首发整体上移版本号（本机已装同内容版本，用于验证更新通道）。"
     },
     {
       "id": "lawyer-billing",
       "name": "模型站计费",
-      "description": "在右侧「用量」面板、设置页与状态栏查看模型站余额和用量（余额卡 + 近 7 天柱状图 + 指标卡）；对话里可直接问 AI 剩余额度、近期消费。",
-      "version": "0.2.0",
+      "description": "对话右上角与底部共享模型站账户余额，对话完成后和每分钟更新；设置页绑定本机令牌，用量面板和对话工具保留消费统计。",
+      "version": "0.3.1",
       "tier": "js",
-      "minAppVersion": "1.0.5",
-      "sdkVersion": "^0.4",
+      "minAppVersion": "1.0.6",
+      "sdkVersion": "^0.4.3",
       "permissions": [
         "storage",
         "tools",
+        "events",
         "ui:settings-section",
         "ui:status-bar",
         "ui:panel-tab",
         "network:model.codingrui.work"
       ],
       "files": {
-        "manifest.json": "b56f9118f929f1ea90b2ccd169b5df66d6f5b78671678e0086c049f0b9ddcfe2",
-        "main.js": "8cda929ffc5d32a01f0db55eab0a7db959e5c55cef1db2dea1af21629ca59c10"
+        "manifest.json": "407b4ddd1cd222bd412d4a8e648d800e190ca719884cac05a03c1c76f112ae7d",
+        "main.js": "781ea966fee23ddfbfebcb2903c0e30ae7a965f1df3bde7e23da152e9bdcdbcc"
       },
-      "notes": "v0.2.0：新增右侧「用量」面板；全部 UI 换宿主语义类（明暗主题自适应）。"
+      "notes": "v0.3.1：用量面板新增「充值」按钮，经宿主安全跳转打开模型站充值页（不携带令牌、不发请求）；保留标题栏余额与用量统计。需要客户端1.0.6、SDK0.4.3。"
     },
     {
       "id": "lawyer-qcc",
       "name": "企查查",
       "description": "用你的企查查账号授权（查询走账号会员额度，每日按会员等级发放），AI 可查询企业工商、风险、知识产权等信息；右侧「企查查」面板支持快查与最近查询。",
-      "version": "0.2.0",
+      "version": "0.2.2",
       "tier": "js",
-      "minAppVersion": "1.0.5",
-      "sdkVersion": "^0.4",
+      "minAppVersion": "1.0.6",
+      "sdkVersion": "^0.4.3",
       "permissions": [
         "storage",
         "tools",
         "ui:settings-section",
         "ui:panel-tab",
         "events",
-        "network:agent.qcc.com",
-        "network:127.0.0.1",
-        "exec:sh"
+        "network:agent.qcc.com"
       ],
       "files": {
-        "manifest.json": "13231e4558a90e1fb8ad9099a8df9f2306b284dd8e7886b591ef0822bbb348d0",
-        "main.js": "cdec883a78e6445a155d7295a3f1777c85cb0935fa93a9b7a2834cf0eb693f8c"
+        "manifest.json": "e85b29066cd1b5389353ee89c53049d73cafcfaa33e1ef7ebc63d644feab865a",
+        "main.js": "1693b6f3d80dc4af5bf291f1678d00a83e4a57a8f44c999d30530cd2a845fc4f"
       },
-      "notes": "v0.2.0：右侧「企查查」面板（快查/最近查询）+ 额度文案改为会员额度口径（账号 OAuth 通道，无充值环节）。"
+      "notes": "v0.2.2：实机授权与查询链路已验证；识别企查查「无匹配项」答复并给出指引；只读工具按官方目录标注放行（8类数据源，写操作一律拒绝）；面板新增已脱敏返回详情，同参重试保护与计费保护保留。需要客户端1.0.6、SDK0.4.3。"
     },
     {
       "id": "lawyer-fts",
