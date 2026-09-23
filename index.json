@@ -25,8 +25,8 @@
     {
       "id": "lawyer-calendar",
       "name": "律师日历",
-      "description": "基于 macOS 日历的月历：翻月、按日期查看日程与详情，直接创建系统提醒，或把日期交给 AI 安排；保留确认写入、修改和删除日程。",
-      "version": "0.3.2",
+      "description": "日历与系统提醒事项双向联动：查看真实日程和定时提醒，并在月历中创建、修改、完成或确认删除提醒。",
+      "version": "0.3.4",
       "tier": "js",
       "minAppVersion": "1.0.6",
       "sdkVersion": "^0.4",
@@ -40,10 +40,10 @@
         "exec:open"
       ],
       "files": {
-        "manifest.json": "dbb77b3e546234f48c6734e3f7e3a2fd8be0bbcf33c483bb0da9b95d3ffe56a3",
-        "main.js": "7efdde17e7b66f0a3cdcc6dacd44dd7813ff59419d9b63a3c3257fe2edf4d1d7"
+        "manifest.json": "d8db47309b57fe28f28c0de562ba296da292911bfe874608d548b5aea5447001",
+        "main.js": "7bba4d54fc7926ca102cf90aea41479e5ab9677835ad567d5cbdd7da773ba076"
       },
-      "notes": "v0.3.2：内容与 0.3.1 一致，随插件站首发整体上移版本号（本机已装同内容版本，用于验证更新通道）。"
+      "notes": "v0.3.4：读取系统各列表中的定时提醒；月历可创建、修改、完成、重新打开与确认删除。编辑只改所选字段，读取截断会明确提示；切回客户端或点击刷新时更新。需客户端 1.0.6 及系统自动化授权。"
     },
     {
       "id": "lawyer-mail",

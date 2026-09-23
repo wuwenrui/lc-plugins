@@ -1,0 +1,10 @@
+{
+  "id": "lawyer-calendar",
+  "name": "律师日历",
+  "version": "0.3.4",
+  "tier": "js",
+  "sdkVersion": "^0.4",
+  "minAppVersion": "1.0.6",
+  "permissions": ["storage", "tools", "ui:settings-section", "ui:panel-tab", "composer:draft", "exec:osascript", "exec:open"],
+  "description": "日历与系统提醒事项双向联动：月历查看真实日程和定时提醒，可创建、修改、完成及确认删除提醒；日程确认后写入系统日历。"
+}
