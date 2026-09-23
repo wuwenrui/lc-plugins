@@ -1,0 +1,10 @@
+{
+  "id": "lawyer-billing",
+  "name": "模型站计费",
+  "version": "0.3.2",
+  "tier": "js",
+  "sdkVersion": "^0.4.3",
+  "minAppVersion": "1.0.6",
+  "permissions": ["storage", "tools", "events", "ui:settings-section", "ui:status-bar", "ui:panel-tab", "network:model.codingrui.work"],
+  "description": "模型站账户余额与用量：标题栏和底部共享余额，对话完成后与每分钟刷新（非实时推送），设置页绑定本机 API 令牌，用量面板查看消费统计。"
+}

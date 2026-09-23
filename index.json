@@ -81,7 +81,7 @@
       "id": "lawyer-billing",
       "name": "模型站计费",
       "description": "对话右上角与底部共享模型站账户余额，对话完成后和每分钟更新；设置页绑定本机令牌，用量面板和对话工具保留消费统计。",
-      "version": "0.3.1",
+      "version": "0.3.2",
       "tier": "js",
       "minAppVersion": "1.0.6",
       "sdkVersion": "^0.4.3",
@@ -95,10 +95,10 @@
         "network:model.codingrui.work"
       ],
       "files": {
-        "manifest.json": "407b4ddd1cd222bd412d4a8e648d800e190ca719884cac05a03c1c76f112ae7d",
-        "main.js": "781ea966fee23ddfbfebcb2903c0e30ae7a965f1df3bde7e23da152e9bdcdbcc"
+        "manifest.json": "647780612408a131c4454ec80d860b39cd13670c21106da5edbbd67aeda0385f",
+        "main.js": "66c4158d3d914508c94c9716654e91c907b3b018722bbf20bfe052f7125f3ed9"
       },
-      "notes": "v0.3.1：用量面板新增「充值」按钮，经宿主安全跳转打开模型站充值页（不携带令牌、不发请求）；保留标题栏余额与用量统计。需要客户端1.0.6、SDK0.4.3。"
+      "notes": "v0.3.2：用量面板「充值」按钮直达模型站钱包页（/wallet，普通用户仅见本人记录）；保留标题栏余额与用量统计。需要客户端1.0.6、SDK0.4.3。"
     },
     {
       "id": "lawyer-qcc",
