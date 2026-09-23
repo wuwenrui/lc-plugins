@@ -1,0 +1,17 @@
+{
+  "id": "lawyer-qcc",
+  "name": "企查查",
+  "version": "0.2.5",
+  "tier": "js",
+  "sdkVersion": "^0.4.3",
+  "minAppVersion": "1.0.6",
+  "permissions": [
+    "storage",
+    "tools",
+    "ui:settings-section",
+    "ui:panel-tab",
+    "events",
+    "network:agent.qcc.com"
+  ],
+  "description": "企查查官方 MCP 只读查询：面板直接展示工商记录，AI 可按八类数据源发现只读工具；同参结果未确认时由账号持有人在本机确认后重试。"
+}

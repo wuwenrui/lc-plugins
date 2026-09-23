@@ -103,8 +103,8 @@
     {
       "id": "lawyer-qcc",
       "name": "企查查",
-      "description": "用企查查账号授权后，AI 可通过官方 MCP 查询企业信息；面板直接展示工商详情，可主动搜索相近企业；同参结果未确认时由本人在面板确认后才重查。",
-      "version": "0.2.4",
+      "description": "用企查查账号授权后，AI 可通过官方 MCP 查询企业信息；面板直接展示工商详情，并可查看八类只读工具目录。",
+      "version": "0.2.5",
       "tier": "js",
       "minAppVersion": "1.0.6",
       "sdkVersion": "^0.4.3",
@@ -114,14 +114,13 @@
         "ui:settings-section",
         "ui:panel-tab",
         "events",
-        "network:agent.qcc.com",
-        "network:www.qcc.com"
+        "network:agent.qcc.com"
       ],
       "files": {
-        "manifest.json": "1c28fcf127e3c065b731159825f1b54a7e9198408b72a41fd925b623c26b8580",
-        "main.js": "b2d8c533b27156a0d1e67d5aa3df331b7736c90e693b1a8f43dd07622b7a1c53"
+        "manifest.json": "5e60d35d0bc1428fc53a391edebfacca025c8adc7de9c025c8df5fbe8112ccb4",
+        "main.js": "8201d94d04b23aec1fd71fe7332f63c2b3a8e9460ab85443c5c67dff43602e37"
       },
-      "notes": "v0.2.4：同参查询被保护时，面板显示一次明确的本人确认重查入口，提示可能再次计费；不替用户自动重试，也不让 AI 解除保护。移除容易与当前查询混淆的旧状态副标题。需要客户端1.0.6及SDK0.4.3以上。"
+      "notes": "v0.2.5：移除面板内网页入口；AI 可逐类发现官方只读工具，设置页可主动检查各类目录。灰色分类明确标注未检查，不把目录可读误认为查询权益。"
     },
     {
       "id": "lawyer-fts",
