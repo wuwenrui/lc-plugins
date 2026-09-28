@@ -1,0 +1,10 @@
+{
+  "id": "lawyer-wps",
+  "name": "WPS 办公助手",
+  "version": "0.1.39",
+  "tier": "js",
+  "sdkVersion": "^0.4.3",
+  "minAppVersion": "1.0.10",
+  "permissions": ["tools", "exec:node"],
+  "description": "在对话中调用本机 WPS 读取、创建和编辑 Word、Excel 与 PDF，包含扫描 PDF OCR。"
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://schemas.wps.cn/oaassist/2019/manifest">
+  <id>lawyercopilot-wps</id>
+  <version>0.1.20</version>
+  <name>LawyerCopilot WPS 连接</name>
+  <description>在本机连接 LawyerCopilot 与 WPS 文字、表格和演示</description>
+  <author>LawyerCopilot</author>
+  <hosts><host name="wps"/><host name="et"/><host name="wpp"/></hosts>
+  <permissions><permission name="document.read"/><permission name="document.write"/></permissions>
+  <ribbon src="ribbon.xml"/>
+  <scripts><script src="main.js"/></scripts>
+</manifest>

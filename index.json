@@ -2,6 +2,36 @@
   "version": 1,
   "plugins": [
     {
+      "id": "lawyer-wps",
+      "name": "WPS 办公助手",
+      "description": "仅 macOS：AI 在对话中调用本机 WPS，处理 PDF 并操作文字、表格和演示文档。",
+      "version": "0.1.39",
+      "tier": "js",
+      "minAppVersion": "1.0.10",
+      "sdkVersion": "^0.4.3",
+      "permissions": [
+        "tools",
+        "exec:node"
+      ],
+      "platforms": [
+        "macos"
+      ],
+      "files": {
+        "manifest.json": "a320cb47e2be83525c0c801212b58ac7fe5547d3ddcaf97211bd8e675f429886",
+        "main.js": "9a7b8d70f9ace35064b7cfe53d72c2a6199662c9c10b91abb7d4c46044c7ad49",
+        "addon-index.html": "04f82bf9b1aad1cd9284abdd6a44768bd78cbbce6a0fce4f76e4418f83c902ec",
+        "addon-main.js": "e4dfb28626b958d8e9485aad3e1bda88905a21317cc5d5c6875f1d0f398c81d0",
+        "addon-manifest.xml": "1bd6ea0d022e528e197774416a09e8fc1e0faaefc28bda95b67091068d12001e",
+        "addon-ribbon.xml": "f80290f53992a8d908d7f836d89a9fae3c079bb5fb71073b63f4f6ee8ecf53ff",
+        "bootstrap.docx": "7c36eb93d99fcad7c7090ecc7a292041e7b08dfd3c33b83e6c3078fe112faf58",
+        "bootstrap.pptx": "5158dcfed670957aeadce578453c4500022525839b450ca51e4191dc58aa9bd0",
+        "bootstrap.xlsx": "1636f930af0246fabad001c6d5daebaa7e9336f418420dbfefd012a3947c1724",
+        "bridge.mjs": "877262364659b823963aa82e4f36fa40f973de02a9ad024a962eae8b29928473",
+        "runner.mjs": "225beb88c5ac4ac4ec22d1744d74ae457a2aa5bc5329ac94e20e22247f0e3c47"
+      },
+      "notes": "v0.1.38 本地候选：延续受控 WPS 通用对象桥、成员探测与受限单格数值公式；图片附件在线 OCR 可经现有 wps_ocr 工具直接返回文字，不要求用户先生成 Word，仍需本次文件在线识别同意。101 项测试通过，需配合含附件路径提示的新版宿主做普通 AI 对话实测；第二台 Mac 与正式更新通道尚未验收。要求 LawyerCopilot 1.0.10 起安装；未远程发布。"
+    },
+    {
       "id": "lawyer-memos",
       "name": "律师备忘录",
       "description": "右侧面板查看 Apple Notes，按文件夹浏览、新建和修改文本备忘录；附件或复杂排版交回系统编辑。另保留提醒事项面板、六个对话工具与原有双向同步。",
