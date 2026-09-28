@@ -181,6 +181,30 @@
       },
       "notes": "v0.1.2：真实账号全量工具审计（10/10）——补齐 generate_copy_file（生成合同文件下载）、render_copy（正文预览）、apply_document_revisions + prepare_document_upload（下载后修订）4 个被白名单误挡的官方工作流工具，均归「需确认」组；法天使官方流程可完整走通：搜模板→建副本→选条款→填变量→生成 docx/pdf 下载→修订。",
       "usage": "在对话里说「检索一下民法典关于违约金的条文」「找类似案例」。"
+    },
+    {
+      "id": "lawyer-notify",
+      "name": "任务提醒",
+      "description": "任务完成时弹 macOS 系统通知：回合（含后台会话）一完成右上角即提醒；正在使用应用时不打扰。设置里可开关通知、提示音与提醒范围。",
+      "version": "0.1.0",
+      "tier": "js",
+      "minAppVersion": "1.0.6",
+      "sdkVersion": "^0.4",
+      "permissions": [
+        "storage",
+        "events",
+        "ui:settings-section",
+        "exec:osascript"
+      ],
+      "platforms": [
+        "macos"
+      ],
+      "files": {
+        "manifest.json": "1edbeb3755d7fbe71cd526077195b955bdef198c8698ca22d577c537dc9e1490",
+        "main.js": "ac85fc46ac070455d0b6e786beffdaab6174ebae979e5404d465aa0d1b2c40cf"
+      },
+      "notes": "v0.1.0 首版：订阅宿主 usage://done 事件，osascript 前台判断 + 系统通知；通知由 osascript 发出，与应用签名无关。限制：点击通知不能跳回应用；回合内部的子代理任务事件宿主尚未透出，暂不覆盖。",
+      "usage": "保持开启即可：让 AI 处理长任务（整理卷宗、查企业信息）后切去干别的，完成时 Mac 右上角弹通知。设置→任务提醒 里可调声音与范围，或点「发一条测试通知」试效果。"
     }
   ]
 }
