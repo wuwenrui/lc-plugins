@@ -35,20 +35,17 @@
       "id": "lawyer-memos",
       "name": "律师备忘录",
       "description": "右侧面板查看 Apple Notes，按文件夹浏览、新建和修改文本备忘录；附件或复杂排版交回系统编辑。另保留提醒事项面板、六个对话工具与原有双向同步。",
-      "version": "0.4.1",
+      "version": "0.5.0",
       "tier": "js",
       "minAppVersion": "1.0.5",
       "sdkVersion": "^0.4",
       "permissions": [
-        "storage",
-        "tools",
-        "ui:settings-section",
         "ui:panel-tab",
         "exec:osascript"
       ],
       "files": {
-        "manifest.json": "bc612c9999bfac551ad8ac2ba2570d1199d6d9ef0f211dccfabdb13bdbcaa275",
-        "main.js": "3d0b2bf359ad4a30c08c2442cb6a14a5dbfd0eea6e5774d0295be7d9965c12b2"
+        "manifest.json": "d3dae384610acfa62b940e2d06511ed2a0b40b9e20dc16b12ac5236e6bd8ee5d",
+        "main.js": "1ed0f2dd95169b8aab8e0df52e1b592b760ed7b66e716e27d0050ba0e3756fe0"
       },
       "notes": "v0.4.1：内容与 0.4.0 一致，随插件站首发整体上移版本号（本机已装同内容版本，用于验证更新通道）。"
     },
@@ -56,7 +53,7 @@
       "id": "lawyer-calendar",
       "name": "律师日历",
       "description": "日历与系统提醒事项双向联动：查看真实日程和定时提醒，并在月历中创建、修改、完成或确认删除提醒。",
-      "version": "0.3.4",
+      "version": "0.4.0",
       "tier": "js",
       "minAppVersion": "1.0.6",
       "sdkVersion": "^0.4",
@@ -70,8 +67,8 @@
         "exec:open"
       ],
       "files": {
-        "manifest.json": "d8db47309b57fe28f28c0de562ba296da292911bfe874608d548b5aea5447001",
-        "main.js": "7bba4d54fc7926ca102cf90aea41479e5ab9677835ad567d5cbdd7da773ba076"
+        "manifest.json": "7abf37efcf953ecc91a37c12ace4b40d0423c8f2b3078847a85c1b3511eee919",
+        "main.js": "0094cb160667d8520d4fce2e48c3f39ac5cff044836dce881936855e86f1fb25"
       },
       "notes": "v0.3.4：读取系统各列表中的定时提醒；月历可创建、修改、完成、重新打开与确认删除。编辑只改所选字段，读取截断会明确提示；切回客户端或点击刷新时更新。需客户端 1.0.6 及系统自动化授权。"
     },

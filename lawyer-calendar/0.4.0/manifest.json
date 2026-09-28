@@ -1,0 +1,18 @@
+{
+  "id": "lawyer-calendar",
+  "name": "律师日历",
+  "version": "0.4.0",
+  "tier": "js",
+  "sdkVersion": "^0.4",
+  "minAppVersion": "1.0.6",
+  "permissions": [
+    "storage",
+    "tools",
+    "ui:settings-section",
+    "ui:panel-tab",
+    "composer:draft",
+    "exec:osascript",
+    "exec:open"
+  ],
+  "description": "基于 EventKit 的日程助手：月历查看/起草/确认/修改/删除日历日程；提醒事项对话工具（新建、列出、修改、完成、删除、列表）与月历提醒视图直接操作系统「提醒事项」。"
+}
