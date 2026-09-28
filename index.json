@@ -34,9 +34,9 @@
     },
     {
       "id": "lawyer-memos",
-      "name": "律师备忘录",
+      "name": "备忘录",
       "description": "右侧面板查看 Apple Notes，按文件夹浏览、新建和修改文本备忘录；附件或复杂排版交回系统编辑。另保留提醒事项面板、六个对话工具与原有双向同步。",
-      "version": "0.5.1",
+      "version": "0.5.2",
       "tier": "js",
       "minAppVersion": "1.0.5",
       "sdkVersion": "^0.4",
@@ -46,7 +46,7 @@
         "exec:osascript"
       ],
       "files": {
-        "manifest.json": "618d2ca0e03185d533a7cd7d4083e8444324850d1071048471c4ab389ffae83f",
+        "manifest.json": "b249f935af4411089cc9b0bf91708fecfb148b0b31576b6bd99e101dc3fe6acc",
         "main.js": "1ed0f2dd95169b8aab8e0df52e1b592b760ed7b66e716e27d0050ba0e3756fe0"
       },
       "notes": "v0.4.1：内容与 0.4.0 一致，随插件站首发整体上移版本号（本机已装同内容版本，用于验证更新通道）。",

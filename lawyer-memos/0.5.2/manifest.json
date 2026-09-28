@@ -1,0 +1,14 @@
+{
+  "id": "lawyer-memos",
+  "name": "备忘录",
+  "version": "0.5.2",
+  "tier": "js",
+  "sdkVersion": "^0.4",
+  "minAppVersion": "1.0.5",
+  "permissions": [
+    "storage",
+    "ui:panel-tab",
+    "exec:osascript"
+  ],
+  "description": "聊天右侧「备忘」面板查看和编辑苹果备忘录（Apple Notes）：按文件夹浏览、新建、修改文本备忘，并记住上次浏览的文件夹；带附件或复杂排版的内容交回系统编辑。提醒事项能力已并入「律师日历」插件。"
+}
