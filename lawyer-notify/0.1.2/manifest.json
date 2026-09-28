@@ -1,0 +1,15 @@
+{
+  "id": "lawyer-notify",
+  "name": "任务提醒",
+  "version": "0.1.2",
+  "tier": "js",
+  "sdkVersion": "^0.4",
+  "minAppVersion": "1.0.6",
+  "permissions": [
+    "storage",
+    "events",
+    "ui:settings-section",
+    "exec:osascript"
+  ],
+  "description": "任务完成时弹 macOS 系统通知：让 AI 跑长任务后切去干别的，回合（含后台会话）一完成，右上角即提醒；正在使用应用时不打扰。可在设置里开关通知、提示音与提醒范围。"
+}
