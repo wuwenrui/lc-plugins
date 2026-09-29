@@ -1,0 +1,16 @@
+{
+  "id": "lawyer-notify",
+  "name": "任务提醒",
+  "version": "0.3.1",
+  "tier": "js",
+  "sdkVersion": "^0.4",
+  "minAppVersion": "1.0.6",
+  "permissions": [
+    "storage",
+    "events",
+    "ui:settings-section",
+    "ui:status-bar",
+    "exec:osascript"
+  ],
+  "description": "任务完成时提醒：状态栏弹出 🔔 徽标（点击清除）+ 系统提示音；正在使用应用时不打扰。正式签名版还将弹 macOS 系统通知。"
+}
