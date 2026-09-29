@@ -186,7 +186,7 @@
       "id": "lawyer-notify",
       "name": "任务提醒",
       "description": "任务完成时提醒：状态栏弹出 🔔 徽标（点击清除）+ 系统提示音；正在使用应用时不打扰。正式签名版还将弹 macOS 系统通知。",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "tier": "js",
       "minAppVersion": "1.0.6",
       "sdkVersion": "^0.4",
@@ -201,10 +201,10 @@
         "macos"
       ],
       "files": {
-        "manifest.json": "2c05f1f63be67880f90c2a67693793c9dc4d521214615f90cf259afb5ea27412",
-        "main.js": "e1d693bfb85ab5a8f49783a0b32f67612229a09e4d3a34bf67c882f32341bb98"
+        "manifest.json": "30a1364ad0dcfda3c5b269626859cd6434b8a0f2240d286b7ca8fcc4ba03461c",
+        "main.js": "883d2b620d62786f60415ff720829cb60385af0cb3c30aaa3b58575d23a0cb08"
       },
-      "notes": "v0.1.0 首版：订阅宿主 usage://done 事件，osascript 前台判断 + 系统通知；通知由 osascript 发出，与应用签名无关。限制：点击通知不能跳回应用；回合内部的子代理任务事件宿主尚未透出，暂不覆盖。",
+      "notes": "v0.3.0：原生通知事件桥（宿主 v1.1.5+），通知显示应用图标；旧宿主自动降级 osascript。",
       "usage": "保持开启即可：让 AI 处理长任务后切去干别的，完成时状态栏出现 🔔 徽标并播放提示音；点击徽标清除。"
     }
   ]
