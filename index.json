@@ -185,8 +185,8 @@
     {
       "id": "lawyer-notify",
       "name": "任务提醒",
-      "description": "任务完成时弹 macOS 系统通知：回合（含后台会话）一完成右上角即提醒；正在使用应用时不打扰。设置里可开关通知、提示音与提醒范围。",
-      "version": "0.1.2",
+      "description": "任务完成时提醒：状态栏弹出 🔔 徽标（点击清除）+ 系统提示音；正在使用应用时不打扰。正式签名版还将弹 macOS 系统通知。",
+      "version": "0.2.0",
       "tier": "js",
       "minAppVersion": "1.0.6",
       "sdkVersion": "^0.4",
@@ -194,17 +194,18 @@
         "storage",
         "events",
         "ui:settings-section",
+        "ui:status-bar",
         "exec:osascript"
       ],
       "platforms": [
         "macos"
       ],
       "files": {
-        "manifest.json": "a469d7dfebc03025cb61c150f825138fb0aa07cdbe01ce77362f007ce254abcc",
-        "main.js": "a5e9de5f76f2839aa39df1f1e1dccf940306eb3a4670314cd937f8468b133438"
+        "manifest.json": "2c05f1f63be67880f90c2a67693793c9dc4d521214615f90cf259afb5ea27412",
+        "main.js": "e1d693bfb85ab5a8f49783a0b32f67612229a09e4d3a34bf67c882f32341bb98"
       },
       "notes": "v0.1.0 首版：订阅宿主 usage://done 事件，osascript 前台判断 + 系统通知；通知由 osascript 发出，与应用签名无关。限制：点击通知不能跳回应用；回合内部的子代理任务事件宿主尚未透出，暂不覆盖。",
-      "usage": "保持开启即可：让 AI 处理长任务（整理卷宗、查企业信息）后切去干别的，完成时 Mac 右上角弹通知。设置→任务提醒 里可调声音与范围，或点「发一条测试通知」试效果。"
+      "usage": "保持开启即可：让 AI 处理长任务后切去干别的，完成时状态栏出现 🔔 徽标并播放提示音；点击徽标清除。"
     }
   ]
 }
