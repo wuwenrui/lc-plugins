@@ -1,0 +1,16 @@
+{
+  "id": "lawyer-notify",
+  "name": "任务提醒",
+  "version": "0.3.4",
+  "tier": "js",
+  "sdkVersion": "^0.4",
+  "minAppVersion": "1.1.6",
+  "permissions": [
+    "storage",
+    "events",
+    "ui:settings-section",
+    "ui:status-bar",
+    "exec:osascript"
+  ],
+  "description": "任务完成时显示应用内徽标、可选提示音，并向宿主请求原生系统提醒；正在使用应用时不打扰。系统是否显示提醒取决于通知设置。"
+}
