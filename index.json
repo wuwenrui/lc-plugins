@@ -206,6 +206,27 @@
       },
       "notes": "v0.3.5：单条自动提醒的标题显示本次完成回答对应的提问，长内容截短，不使用后续提问或会话名；多条合并仍显示数量。必须先安装 LawyerCopilot 1.1.8，再更新本插件。",
       "usage": "先安装客户端 1.1.8，再更新任务提醒。完成单条提问时，通知标题显示这一轮的问题；手动测试仍使用通用测试标题。提问可能出现在系统通知中，请留意屏幕与锁屏隐私。"
+    },
+    {
+      "id": "lawyer-wk",
+      "name": "威科先行",
+      "description": "在对话里检索威科先行的法规、法条和案例。使用你自己的威科先行授权码，授权码只保存在本机。",
+      "version": "0.1.0",
+      "tier": "js",
+      "minAppVersion": "1.0.6",
+      "sdkVersion": "^0.4.3",
+      "permissions": [
+        "storage",
+        "tools",
+        "ui:settings-section",
+        "network:mcp.wkinfo.com.cn"
+      ],
+      "files": {
+        "manifest.json": "f7e3be2650b54082ef6f03a28484ec608252c832d8a302d2140b55d2fd15bff0",
+        "main.js": "451f6b30a1d299ad67da8cfebf7a47deb9023576c237a3ef4cddd15fc761568e"
+      },
+      "notes": "v0.1.0 首次发布：法规、法条、案例检索与引用核对共 6 项；需要你自己的威科先行授权码。",
+      "usage": "先在设置里粘贴威科先行授权码，然后在对话里问「民法典第五百七十七条怎么规定的」。"
     }
   ]
 }
