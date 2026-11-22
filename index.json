@@ -5,7 +5,7 @@
       "id": "lawyer-wps",
       "name": "WPS 办公助手",
       "description": "仅 macOS：AI 在对话中调用本机 WPS，处理 PDF 并操作文字、表格和演示文档。",
-      "version": "0.1.40",
+      "version": "0.1.41",
       "tier": "js",
       "minAppVersion": "1.0.10",
       "sdkVersion": "^0.4.3",
@@ -17,8 +17,8 @@
         "macos"
       ],
       "files": {
-        "manifest.json": "cee7cf28fecf7f9a54d7835f4d9487a8ce70481ba874873018ccdda40e2032d7",
-        "main.js": "4423d1997efc36b65dcc9679a551612bd91cb43e9ad3244ff46cd300965d2666",
+        "manifest.json": "1549b631f8c151ca7b345415cba2bcdb0c76f9285e12f26742c54fae8648377d",
+        "main.js": "92f4e99a9e674dd041d2c2939a69565dc7f054e802b7e3876d9b51847c1da4ae",
         "addon-index.html": "04f82bf9b1aad1cd9284abdd6a44768bd78cbbce6a0fce4f76e4418f83c902ec",
         "addon-main.js": "e4dfb28626b958d8e9485aad3e1bda88905a21317cc5d5c6875f1d0f398c81d0",
         "addon-manifest.xml": "1bd6ea0d022e528e197774416a09e8fc1e0faaefc28bda95b67091068d12001e",
@@ -26,10 +26,11 @@
         "bootstrap.docx": "7c36eb93d99fcad7c7090ecc7a292041e7b08dfd3c33b83e6c3078fe112faf58",
         "bootstrap.pptx": "5158dcfed670957aeadce578453c4500022525839b450ca51e4191dc58aa9bd0",
         "bootstrap.xlsx": "1636f930af0246fabad001c6d5daebaa7e9336f418420dbfefd012a3947c1724",
-        "bridge.mjs": "24f27e8beebe6c34240e9977c3e2381506428a3badb35bde02631e6b2734efbd",
-        "runner.mjs": "dba6e20a6e21d49fe188889eaa49c38fb4f4599b6537bd15fbc5385ff77f20c8"
+        "bridge.mjs": "26f8ceb598a9399f1d21575406b7809df331958745ef1b9e6cd266558ff5c0f8",
+        "restart-prompt.mjs": "7a8f6f4dac6a87d578d88d708269e2d4cb2beed5ef895fa372de6ff712899342",
+        "runner.mjs": "25091e8e785e7efc1f061b6dc58f7ad1790b2aa51b9a9e500935677f70a3c4fd"
       },
-      "notes": "v0.1.40：系统权限被拒时给出完整指引（客户端更新后原授权会失效，需把「文件与文件夹 → LawyerCopilot → WPS Office」先关闭再重新打开），首次连接失败不再显示原始报错；授权后重试会重新建立本机连接。103 项测试通过；授权指引本身未在第二台 Mac 实测。要求 LawyerCopilot 1.0.10 起安装。",
+      "notes": "v0.1.41：插件更新后若 WPS 仍在运行旧版办公助手，会主动弹窗说明原因，确认后由 WPS 询问保存、退出并自动重开；系统权限被拒时提示把「文件与文件夹 → LawyerCopilot → WPS Office」先关闭再打开，授权后不用重启客户端。105 项测试通过；重开 WPS 的弹窗流程尚未连真实 WPS 验收。要求 LawyerCopilot 1.0.10 起安装。",
       "usage": "在对话里直接说「用 WPS 打开这份合同」「把这份扫描件用 WPS 识别成文字」；附加图片后说「用 WPS 识别这张图」。"
     },
     {
