@@ -227,6 +227,28 @@
       },
       "notes": "v0.1.0 首次发布：法规、法条、案例检索与引用核对共 6 项；需要你自己的威科先行授权码。",
       "usage": "先在设置里粘贴威科先行授权码，然后在对话里问「民法典第五百七十七条怎么规定的」。"
+    },
+    {
+      "id": "lawyer-alpha",
+      "name": "Alpha 法律检索",
+      "description": "在对话里检索 Alpha 的法规、条文、案例、司法观点、行政处罚和检察文书。使用你自己的 Alpha 账号登录授权，授权只保存在本机。",
+      "version": "0.1.0",
+      "tier": "js",
+      "minAppVersion": "1.1.11",
+      "sdkVersion": "^0.4.8",
+      "permissions": [
+        "storage",
+        "tools",
+        "ui:settings-section",
+        "host:web-login",
+        "network:alphalawyer.cn"
+      ],
+      "files": {
+        "manifest.json": "b8b38b33ccaee5f014601550c50a2093b6f2f0e58405c697f7c18c7f957885f0",
+        "main.js": "74d49eb22f7a0e99363d74fd6943f6eaef5c46500151c101e8416505ad55a89d"
+      },
+      "notes": "v0.1.0 首次发布：法规、条文原文、案例、司法观点、行政处罚、检察文书共 6 项检索；需要 LawyerCopilot 1.1.11 及以上，并用你自己的 Alpha 账号登录授权。",
+      "usage": "先在插件设置里点「登录 Alpha 授权」并完成登录，然后在对话里问「用 Alpha 查一下竞业限制违约金的法规和案例」。"
     }
   ]
 }

@@ -1,0 +1,10 @@
+{
+  "id": "lawyer-alpha",
+  "name": "Alpha 法律检索",
+  "version": "0.1.0",
+  "tier": "js",
+  "sdkVersion": "^0.4.8",
+  "minAppVersion": "1.1.11",
+  "permissions": ["storage", "tools", "ui:settings-section", "host:web-login", "network:alphalawyer.cn"],
+  "description": "在对话里检索 Alpha 的法规、条文、案例、司法观点、行政处罚和检察文书。使用你自己的 Alpha 账号登录授权，授权只保存在本机。"
+}
