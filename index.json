@@ -232,9 +232,9 @@
       "id": "lawyer-alpha",
       "name": "Alpha 法律检索",
       "description": "在对话里检索 Alpha 的法规、条文、案例、司法观点、行政处罚和检察文书。使用你自己的 Alpha 账号登录授权，授权只保存在本机。",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "tier": "js",
-      "minAppVersion": "1.1.11",
+      "minAppVersion": "1.1.12",
       "sdkVersion": "^0.4.8",
       "permissions": [
         "storage",
@@ -244,10 +244,10 @@
         "network:alphalawyer.cn"
       ],
       "files": {
-        "manifest.json": "b8b38b33ccaee5f014601550c50a2093b6f2f0e58405c697f7c18c7f957885f0",
-        "main.js": "74d49eb22f7a0e99363d74fd6943f6eaef5c46500151c101e8416505ad55a89d"
+        "manifest.json": "d6dc3a552f4e03a09e50603dd52bc4536855941953ad1716261ebf5756dacafb",
+        "main.js": "bedbf99c3beea49258bdfdf2a5b8407a6f093012ab35a37f8c687eecdda375ae"
       },
-      "notes": "v0.1.0 首次发布：法规、条文原文、案例、司法观点、行政处罚、检察文书共 6 项检索；需要 LawyerCopilot 1.1.11 及以上，并用你自己的 Alpha 账号登录授权。",
+      "notes": "v0.1.1：登录授权直接打开 Alpha 登录页（微信扫码或账号密码），修复登录窗口空白。法规、条文原文、案例、司法观点、行政处罚、检察文书共 6 项检索；需要 LawyerCopilot 1.1.12 及以上。",
       "usage": "先在插件设置里点「登录 Alpha 授权」并完成登录，然后在对话里问「用 Alpha 查一下竞业限制违约金的法规和案例」。"
     }
   ]
