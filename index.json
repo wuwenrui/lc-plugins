@@ -81,7 +81,7 @@
       "id": "lawyer-mail",
       "name": "律师邮件",
       "description": "AI 可真实收发邮件（IMAP/SMTP）：支持绑定多个邮箱、面板顶部一键切换、对话中指定邮箱；右侧面板浏览、多选交给 AI、搜索、读信、附件下载；发信必须律师确认。",
-      "version": "0.4.2",
+      "version": "0.4.3",
       "tier": "js",
       "minAppVersion": "1.0.6",
       "sdkVersion": "^0.4.3",
@@ -91,11 +91,12 @@
         "ui:settings-section",
         "ui:panel-tab",
         "composer:draft",
-        "exec:node"
+        "exec:node",
+        "network:nodejs.org"
       ],
       "files": {
-        "manifest.json": "6d4e32cce6a434ef4ab2a9bf6c345f6a4f7f32b58da38f7fd16d452391b596f0",
-        "main.js": "b914c8efa8b63a25b7e241f105a7f17b2d8f5c0f0364311f0f8f0f09288d1972",
+        "manifest.json": "97daa1ae7808a9f683a6c3e8f630cc22ba0914fb58b6cf5141908bb6a29a326d",
+        "main.js": "3ca6f4116226c38c98017917d96edceece7404ca21613d2bc825cacfd9238b05",
         "attachment-save.js": "7837023a4849598655c1bbbedcf76d87b973beb6f61fae677deed811ab3d63a8",
         "attachments.js": "3f00672ace313cd8b8bc1f0b39fa5fcefa7d214c6383797a55fd855324c8134e",
         "errors.js": "922efc20d94ccc2cc58ecc10b4099ddf1788a6c7e4af38c34ad747636afc4549",
@@ -107,7 +108,7 @@
         "smtp.js": "38e2a3d6e016437e159a2ae52bc6938a6ec1a100e1aa059e6180d8223135697c",
         "validate.js": "b050ec7b24a8cce3acf0ada1fca37bd052c7c01eabddbf6cd3838b06a6816c4c"
       },
-      "notes": "v0.4.2：内容与 0.4.1 一致，随插件站首发整体上移版本号（本机已装同内容版本，用于验证更新通道）。",
+      "notes": "v0.4.3：新增运行环境检查。电脑没装 Node.js、版本过旧或插件文件缺失时，设置页顶部给出真实原因，并可一键打开 Node.js 下载页、重新检测；绑定报错不再统一提示重装插件。147 项测试通过，真实客户端内尚未验收。",
       "usage": "先在设置里绑定邮箱，然后在对话里说「收一下最新邮件」「帮我给王律师回一封邮件」。"
     },
     {
